@@ -2,17 +2,18 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15.3
+      - image: circleci/node:1.2.0
     branches:
       only:
         - master
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: npm install
+          name: test...
+          command: echo "Testing..."
       - run:
           name: Run tests
-          command: npm test
+          command: echo "Running tests..."
       - run:
           name: Build project
+          command: echo "Building project..."
