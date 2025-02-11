@@ -9,7 +9,7 @@ jobs:
       only:
         - master
     steps:
-#      - checkout
+      - checkout
       - run:
           name: test...
           command: echo "Testing..."
