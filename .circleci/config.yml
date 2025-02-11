@@ -1,8 +1,8 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/node:1.2.0
+#    docker:
+#      - image: circleci/node:1.2.0
     branches:
       only:
         - master
