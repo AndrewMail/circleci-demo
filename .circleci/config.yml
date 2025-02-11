@@ -26,5 +26,5 @@ jobs:
           name: check ls
           command: ls
       - run:
-          name: check ll
-          command: ll
+          name: check ls
+          command: ls -la
