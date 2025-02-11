@@ -3,11 +3,13 @@ jobs:
   build:
 #    docker:
 #      - image: circleci/node:1.2.0
+    machine:
+      image: ubuntu-2204:current
     branches:
       only:
         - master
     steps:
-      - checkout
+#      - checkout
       - run:
           name: test...
           command: echo "Testing..."
