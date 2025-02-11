@@ -19,3 +19,9 @@ jobs:
       - run:
           name: Build project
           command: echo "Building project..."
+      - run:
+          name: check pwd
+          command: pwd
+      - run:
+          name: check ls
+          command: ls
