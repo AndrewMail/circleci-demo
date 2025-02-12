@@ -14,12 +14,6 @@ jobs:
           name: test...
           command: echo "Testing..."
       - run:
-          name: Run tests
-          command: echo "Running tests..."
-      - run:
-          name: Build project
-          command: echo "Building project..."
-      - run:
           name: check pwd
           command: pwd
       - run:
@@ -28,3 +22,12 @@ jobs:
       - run:
           name: check ls
           command: ls -la
+      - run:
+          name: mvn clean
+          command: mvn clean
+      - run:
+          name: mvn compile
+          command: mvn compile
+      - run:
+          name: mvn package
+          command: mvn package
