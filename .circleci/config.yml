@@ -37,3 +37,12 @@ jobs:
       - run:
           name: jps
           command: jps
+      - run:
+          name: java -jar
+          command: java -jar target/circleci-demo-0.0.1-SNAPSHOT.jar
+      - run:
+          name: jps
+          command: jps
+      - run:
+          name: echo "Done!"
+          command: echo "Done!"
