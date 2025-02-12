@@ -31,3 +31,12 @@ jobs:
       - run:
           name: mvn package
           command: mvn package
+      - run:
+          name: pwd
+          command: pwd
+      - run:
+          name: ls
+          command: ls
+      - run:
+          name: ls -la
+          command: ls -la
