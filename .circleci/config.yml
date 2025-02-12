@@ -32,11 +32,8 @@ jobs:
           name: mvn package
           command: mvn package
       - run:
-          name: pwd
-          command: pwd
-      - run:
-          name: ls
-          command: ls
+          name: cd target
+          command: cd target
       - run:
           name: ls -la
           command: ls -la
