@@ -34,3 +34,6 @@ jobs:
       - run:
           name: ls target
           command: ls target
+      - run:
+          name: jps
+          command: jps
